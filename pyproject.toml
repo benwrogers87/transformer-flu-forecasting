@@ -1,0 +1,29 @@
+[project]
+name = "transformer-flu-forecasting"
+version = "0.1.0"
+description = "Using transformer models to forecast flu dynamics"
+authors = [
+    {name = "Benjamin W. Rogers", email = "bwrogers@umass.edu"}
+]
+
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+dependencies = [
+    "polars",
+    "gluonts",
+    "datetime",
+    "torch",
+    "pymmwr",
+    "lightning",
+    "scipy",
+    "pyarrow",
+    "matplotlib",
+    "data-pipeline @ git+https://github.com/reichlab/flusion.git#subdirectory=code/data-pipeline",
+]
+
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ['setuptools', 'wheel']
+
